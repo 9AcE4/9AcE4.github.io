@@ -1,36 +1,113 @@
 <!doctype html>
+<!--
+  index.html
+  Zweck: Startseite für "ServeLoad" — einfache statische Landingpage mit eingebettetem Canva-Design.
+  Hinweis: Kommentare in dieser Datei erklären Aufbau, Styling und wichtige Attribute.
+-->
+
 <html lang="de">
 <head>
+  <!-- Zeichencodierung: UTF-8 sorgt für korrekte Darstellung deutscher Umlaute -->
   <meta charset="utf-8" />
+
+  <!--
+    Responsives Verhalten:
+    viewport sorgt dafür, dass sich die Seite an die Breite des Geräts anpasst
+    und das initiale Zoom-Level auf 1 setzt.
+  -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Seitentitel, wird in Tabs und Suchergebnissen angezeigt -->
   <title>ServeLoad</title>
+
+  <!-- Kurze Beschreibung, nützlich für Suchmaschinen und Linkvorschauen -->
   <meta name="description" content="ServeLoad – Cybersecurity Aufklärung, Tipps und Checklisten." />
+
   <style>
-    body { margin:0; background:#0b0b0d; color:#eee; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 16px; }
-    a { color:#ff8a2a; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    footer { font-size: 13px; opacity: .75; padding: 12px 0 24px; }
+    /* Globale Basisstile */
+    body {
+      margin: 0; /* Entfernt Standard-Abstand des Bodys */
+      background: #0b0b0d; /* dunkler Hintergrund für kontrastreiche Darstellung */
+      color: #eee; /* helle Schrift für guten Kontrast auf dunklem Hintergrund */
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; /* System-Schriftfall-back */
+    }
+
+    /* Zentrierter Inhalt mit max. Breite für bessere Lesbarkeit auf großen Bildschirmen */
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto; /* Horizontal zentrieren */
+      padding: 16px; /* Innenabstand */
+    }
+
+    /* Link-Farbe und -Verhalten */
+    a {
+      color: #ff8a2a; /* Akzentfarbe für Links */
+      text-decoration: none; /* Underline standardmäßig entfernen */
+    }
+    a:hover {
+      text-decoration: underline; /* Unterstreichen beim Hover zur besseren Erkennbarkeit */
+    }
+
+    /* Footer-Schriftgröße und optische Abmilderung */
+    footer {
+      font-size: 13px;
+      opacity: .75; /* leicht ausgeblendete Schrift */
+      padding: 12px 0 24px;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
 
+    <!--
+      Container für responsives eingebettetes Design (iframe).
+      Die Technik:
+      - Das Element hat height: 0 und padding-top in Prozent (hier 393.5578%)
+        Das Prozent-Padding bezieht sich auf die Breite des Elements und erzeugt
+        so ein festes Seitenverhältnis (Breite : Höhe).
+      - Das iframe wird absolut positioniert und füllt den Container.
+      Vorteil: iframe skaliert proportional zur Breite (responsive).
+      Hinweis: padding-top ist hier sehr groß (393.5578%) — vermutlich basierend auf
+      dem Original-Designverhältnis. Bei Bedarf anpassen (z. B. 56.25% für 16:9).
+    -->
     <div style="position: relative; width: 100%; height: 0; padding-top: 393.5578%;
       padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
       margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
       border-radius: 8px; will-change: transform;">
+      <!--
+        Eingebettetes Canva-Design als iframe.
+        Wichtige Attribute:
+        - loading="lazy": verzögert das Laden bis nötig (Performance-Verbesserung).
+        - allowfullscreen / allow="fullscreen": erlaubt Vollbildmodus.
+        - style: absolute Positionierung, damit es den Container vollständig ausfüllt.
+        Sicherheits-Hinweis:
+        - Externe Inhalte in iframes können Risiken bergen (Tracking, böswillige Skripte).
+        - Falls möglich, in Zukunft 'referrerpolicy' oder 'sandbox' prüfen, z. B.
+          sandbox="allow-scripts allow-same-origin" und ein geeignetes 'referrerpolicy'.
+        - Bei Einbettung von Drittanbietern (Canva) stellt sicher, dass Ihr
+          die Datenschutz-/Nutzungsbedingungen beachtet.
+      -->
       <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;
         border: none; padding: 0; margin: 0;"
         src="https://www.canva.com/design/DAG9PSNmFVI/mRAhnlXbIiRr54FKG0Malg/view?embed"
         allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
     </div>
 
+    <!--
+      Quellenangabe / Link zum Design.
+      - target="_blank": öffnet den Link in neuem Tab.
+      - rel="noopener": verhindert, dass die neue Seite Zugriff auf window.opener hat (Sicherheitsbest practice).
+    -->
     <p style="font-size:14px; opacity:.85; margin: 0 0 18px;">
       <a href="https://www.canva.com/design/DAG9PSNmFVI/mRAhnlXbIiRr54FKG0Malg/view"
          target="_blank" rel="noopener">Design</a> von ServeLoad
     </p>
 
+    <!--
+      Footer mit Links zu Impressum und Datenschutzerklärung.
+      Lokale Seiten werden über relative Pfade angesprochen (z. B. /impressum.html).
+      Hinweis: Stelle sicher, dass die verlinkten Dateien vorhanden sind (impressum.html, datenschutz.html).
+    -->
     <footer>
       <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a>
     </footer>
