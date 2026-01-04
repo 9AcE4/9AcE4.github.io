@@ -33,7 +33,7 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 ## 🛠️ Technik
 - Statische Website (HTML/CSS)
 - Hosting: GitHub Pages
-
+- Domain & DNS: IONOS
 ---
 
 ## 💬 Feedback & Kontakt
