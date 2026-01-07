@@ -197,3 +197,143 @@ footer{
   border: 1px solid var(--border);
   background: rgba(255,255,255,0.03);
 }
+
+/* === Startseite: kleine Zusatz-Styles (ans Ende deiner style.css) === */
+
+.section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  margin: 18px 0 10px;
+}
+
+.section-head h2{
+  margin:0;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.section-head .hint{
+  color: var(--muted2);
+  font-size: 12px;
+}
+
+.btnrow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top: 12px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  font-weight: 750;
+  letter-spacing: 0.1px;
+  cursor:pointer;
+}
+
+.btn:hover{border-color: rgba(213,139,60,0.35); background: rgba(213,139,60,0.10);}
+.btn:active{transform: translateY(1px);}
+
+.btn.secondary{
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+}
+
+.overview-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 720px){
+  .overview-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card .k{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom: 10px;
+}
+
+.badge-dot{
+  width:12px;
+  height:12px;
+  border-radius:999px;
+  background: var(--accent);
+  opacity: 0.9;
+  box-shadow: 0 0 0 3px rgba(213,139,60,0.10);
+}
+
+.card .more{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top: 10px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.navbox{
+  border-radius: var(--radius2);
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.12);
+  overflow:hidden;
+}
+
+.navitem{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding: 14px;
+  border-top: 1px solid var(--border);
+  text-decoration:none;
+}
+
+.navitem:first-child{border-top:none;}
+
+.navitem:hover{
+  background: rgba(255,255,255,0.03);
+}
+
+.navitem .left{
+  min-width: 180px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.navitem .right{
+  color: var(--muted);
+  flex: 1 1 auto;
+}
+
+.navitem .chev{
+  color: var(--accent);
+  font-weight: 900;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.small-note{
+  color: var(--muted2);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+hr.soft{
+  border:0;
+  border-top: 1px solid var(--border);
+  margin: 14px 0;
+}
