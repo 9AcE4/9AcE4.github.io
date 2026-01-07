@@ -129,14 +129,13 @@
               <br>
               <div class="kicker"><span class="bar"></span><span>Hinweise</span></div>
               <h2>Wichtig!</h2>
-              <p>
-                Bei akuter Gefahr direkt Handeln!
+              <p>Bei akuter Gefahr direkt handeln:</p>
               <ul class="bullets">
                 <li> Bank/Behörde kontaktieren </li>
                 <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
                 <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
               </ul>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -237,14 +236,13 @@
               <br>
               <div class="kicker"><span class="bar"></span><span>Hinweise</span></div>
               <h2>Wichtig!</h2>
-              <p>
-                Bei akuter Gefahr direkt Handeln!
+              <p>Bei akuter Gefahr direkt handeln:</p>
               <ul class="bullets">
                 <li> Bank/Behörde kontaktieren </li>
                 <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
                 <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
               </ul>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -297,14 +295,13 @@
               <br>
               <div class="kicker"><span class="bar"></span><span>Hinweise</span></div>
               <h2>Wichtig!</h2>
-              <p>
-                Bei akuter Gefahr direkt Handeln!
+              <p>Bei akuter Gefahr direkt handeln:</p>
               <ul class="bullets">
                 <li> Bank/Behörde kontaktieren </li>
                 <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
                 <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
               </ul>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -322,29 +319,54 @@
   </div>
 
   <script>
-    // Simple accessible tabs
+    // Accessible tabs + deep-linking via URL hash (e.g. ...html#tab-ziele)
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
     const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
 
-    function activateTab(tab) {
+    function activateTab(tab, { setHash = true, focus = true } = {}) {
       tabs.forEach(t => {
         const selected = (t === tab);
         t.setAttribute('aria-selected', selected ? 'true' : 'false');
         t.tabIndex = selected ? 0 : -1;
       });
-      panels.forEach(p => p.hidden = true);
+
+      panels.forEach(p => { if (p) p.hidden = true; });
+
       const panel = document.getElementById(tab.getAttribute('aria-controls'));
-      panel.hidden = false;
-      tab.focus({preventScroll:true});
+      if (panel) panel.hidden = false;
+
+      if (setHash && tab.id) {
+        // Replace hash without jumping/scrolling
+        history.replaceState(null, '', '#' + encodeURIComponent(tab.id));
+      }
+
+      if (focus) tab.focus({ preventScroll: true });
     }
 
+    function tabFromHash() {
+      const id = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+      if (!id) return null;
+      return tabs.find(t => t.id === id) || null;
+    }
+
+    // Click + keyboard
     tabs.forEach(tab => {
       tab.addEventListener('click', () => activateTab(tab));
       tab.addEventListener('keydown', (e) => {
         const i = tabs.indexOf(tab);
-        if (e.key === 'ArrowRight') activateTab(tabs[(i+1) % tabs.length]);
-        if (e.key === 'ArrowLeft') activateTab(tabs[(i-1 + tabs.length) % tabs.length]);
+        if (e.key === 'ArrowRight') activateTab(tabs[(i + 1) % tabs.length]);
+        if (e.key === 'ArrowLeft') activateTab(tabs[(i - 1 + tabs.length) % tabs.length]);
       });
+    });
+
+    // On load: open tab from hash (if present)
+    const initial = tabFromHash();
+    if (initial) activateTab(initial, { setHash: false, focus: false });
+
+    // If hash changes while the page is open, switch tabs accordingly
+    window.addEventListener('hashchange', () => {
+      const t = tabFromHash();
+      if (t) activateTab(t, { setHash: false, focus: false });
     });
   </script>
 </body>
