@@ -286,6 +286,10 @@ footer{
   font-weight: 700;
 }
 
+.card .orange{
+  color: var(--accent);
+}
+
 .navbox{
   border-radius: var(--radius2);
   border: 1px solid var(--border);
