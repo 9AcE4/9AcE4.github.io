@@ -1,114 +1,221 @@
 <!doctype html>
-<!--
-  index.html
-  Zweck: Startseite für "ServeLoad" — einfache statische Landingpage mit eingebettetem Canva-Design.
-  Hinweis: Kommentare in dieser Datei erklären Aufbau, Styling und wichtige Attribute.
--->
-
 <html lang="de">
 <head>
-  <!-- Zeichencodierung: UTF-8 sorgt für korrekte Darstellung deutscher Umlaute -->
   <meta charset="utf-8" />
-
-  <!--
-    Responsives Verhalten:
-    viewport sorgt dafür, dass sich die Seite an die Breite des Geräts anpasst
-    und das initiale Zoom-Level auf 1 setzt.
-  -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Seitentitel, wird in Tabs und Suchergebnissen angezeigt -->
-  <title>ServeLoad</title>
-
-  <!-- Kurze Beschreibung, nützlich für Suchmaschinen und Linkvorschauen -->
-  <meta name="description" content="ServeLoad – Cybersecurity Aufklärung, Tipps und Checklisten." />
-  <style>
-    /* Globale Basisstile */
-    body {
-      margin: 0; /* Entfernt Standard-Abstand des Bodys */
-      background: #0b0b0d; /* dunkler Hintergrund für kontrastreiche Darstellung */
-      color: #eee; /* helle Schrift für guten Kontrast auf dunklem Hintergrund */
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; /* System-Schriftfall-back */
-    }
-
-    /* Zentrierter Inhalt mit max. Breite für bessere Lesbarkeit auf großen Bildschirmen */
-    .wrap {
-      /*max-width: 980px;
-      margin: 0 auto; /* Horizontal zentrieren */
-      padding: 16px; /* Innenabstand */
-    }
-
-    /* Link-Farbe und -Verhalten */
-    a {
-      color: #ff8a2a; /* Akzentfarbe für Links */
-      text-decoration: none; /* Underline standardmäßig entfernen */
-    }
-    a:hover {
-      text-decoration: underline; /* Unterstreichen beim Hover zur besseren Erkennbarkeit */
-    }
-
-    /* Footer-Schriftgröße und optische Abmilderung */
-    footer {
-      font-size: 13px;
-      opacity: .75; /* leicht ausgeblendete Schrift */
-      padding: 12px 0 24px;
-    }
-  </style>
+  <title>ServeLoad – Cybersecurity verständlich erklärt</title>
+  <meta name="description" content="ServeLoad erklärt Cybersecurity in klarer Sprache – Orientierung, Grundlagen und praktische Maßnahmen für Alltag und Familie." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="wrap">
 
-    <!--
-      Container für responsives eingebettetes Design (iframe).
-      Die Technik:
-      - Das Element hat height: 0 und padding-top in Prozent (hier 393.5578%)
-        Das Prozent-Padding bezieht sich auf die Breite des Elements und erzeugt
-        so ein festes Seitenverhältnis (Breite : Höhe).
-      - Das iframe wird absolut positioniert und füllt den Container.
-      Vorteil: iframe skaliert proportional zur Breite (responsive).
-      Hinweis: padding-top ist hier sehr groß (393.5578%) — vermutlich basierend auf
-      dem Original-Designverhältnis. Bei Bedarf anpassen (z. B. 56.25% für 16:9).
-    -->
-    <div style="position: relative; width: 100%; height: 0; padding-top: 393.5578%;
-      padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-      margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-      border-radius: 8px; will-change: transform;">
-      <!--
-        Eingebettetes Canva-Design als iframe.
-        Wichtige Attribute:
-        - loading="lazy": verzögert das Laden bis nötig (Performance-Verbesserung).
-        - allowfullscreen / allow="fullscreen": erlaubt Vollbildmodus.
-        - style: absolute Positionierung, damit es den Container vollständig ausfüllt.
-        Sicherheits-Hinweis:
-        - Externe Inhalte in iframes können Risiken bergen (Tracking, böswillige Skripte).
-        - Falls möglich, in Zukunft 'referrerpolicy' oder 'sandbox' prüfen, z. B.
-          sandbox="allow-scripts allow-same-origin" und ein geeignetes 'referrerpolicy'.
-        - Bei Einbettung von Drittanbietern (Canva) stellt sicher, dass Ihr
-          die Datenschutz-/Nutzungsbedingungen beachtet.
-      -->
-      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;
-        border: none; padding: 0; margin: 0;"
-        src="https://www.canva.com/design/DAG9PSNmFVI/mRAhnlXbIiRr54FKG0Malg/view?embed"
-        allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    <!-- Topbar -->
+    <header>
+      <div class="brand">
+        <div class="name">ServeLoad</div>
+        <div class="tag">Ihre Platform für CyberSecurity</div>
+      </div>
+
+      <div class="chips" aria-label="Transparenz-Hinweise">
+        <span class="chip">Keine Anmeldung</span>
+        <span class="chip">Kein Tracking</span>
+        <span class="chip">Keine Downloads</span>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-inner">
+        <div class="kicker">
+          <span class="bar"></span>
+          <span>Startseite</span>
+        </div>
+
+        <h1 id="page-title">Willkommen zu ServeLoad</h1>
+
+        <p class="sub">
+          Digitale Sicherheit klar erklärt. <br>
+          ServeLoad ist ein unabhängiges Aufklärungsprojekt rund um Cybersecurity.
+          Du findest hier kurze Erklärungen, Orientierung und nachvollziehbare Schritte um dich im Alltag und darüber hinaus zu schützen.
+        </p>
+
+        <div class="btnrow">
+          <a class="btn" href="#uebersicht">Zum Einstieg</a>
+          <a class="btn" href="#navigation">Zur Navigation</a>
+          <a class="btn" href="#eltern">Für Eltern</a>
+          <a class="btn" href="#extras">Extras</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Übersicht -->
+    <div class="section-head" id="uebersicht">
+      <h2>Übersicht</h2>
+      <div class="hint">Schnell reinfinden</div>
     </div>
 
-    <!--
-      Quellenangabe / Link zum Design.
-      - target="_blank": öffnet den Link in neuem Tab.
-      - rel="noopener": verhindert, dass die neue Seite Zugriff auf window.opener hat (Sicherheitsbest practice).
-    -->
-    <p style="font-size:14px; opacity:.85; margin: 0 0 18px;">
-      <!-- <a href="https://www.canva.com/design/DAG9PSNmFVI/mRAhnlXbIiRr54FKG0Malg/view"
-         target="_blank" rel="noopener">Design</a> von ServeLoad
-    </p> -->
+    <section class="panel" aria-label="Übersicht">
+      <div class="content">
+        <div class="overview-grid">
 
-    <!--
-      Footer mit Links zu Impressum und Datenschutzerklärung.
-      Lokale Seiten werden über relative Pfade angesprochen (z. B. /impressum.html).
-      Hinweis: Stelle sicher, dass die verlinkten Dateien vorhanden sind (impressum.html, datenschutz.html).
-    -->
+          <div class="card">
+            <div class="k"><span class="badge-dot"></span><h2 style="margin:0;">Was ist ServeLoad?</h2></div>
+            <p>
+              Kurz erklärt, wofür ServeLoad steht – und wie du die Inhalte hier am besten nutzt.
+            </p>
+            <a class="more" href="/was_ist_serveload.html">Mehr <span aria-hidden="true">›</span></a>
+          </div>
+
+          <div class="card">
+            <div class="k"><span class="badge-dot"></span><h2 style="margin:0;">Was bedeutet Cybersecurity?</h2></div>
+            <p>
+              Eine verständliche Definition: worum es geht, was typische Risiken sind – sauber eingeordnet.
+            </p>
+            <a class="more" href="/was_bedeutet_cybersecurity.html">Mehr <span aria-hidden="true">›</span></a>
+          </div>
+
+          <div class="card">
+            <div class="k"><span class="badge-dot"></span><h2 style="margin:0;">Gibt es Schutz?</h2></div>
+            <p>
+              Von Achtsamkeit bis Fortgeschritten: welche Schutzprinzipien wirklich helfen – Schritt für Schritt.
+            </p>
+            <a class="more" href="/gibt_es_schutz.html">Mehr <span aria-hidden="true">›</span></a>
+          </div>
+
+        </div>
+
+        <hr class="soft" />
+
+        <p class="small-note">
+          Wichtig: ServeLoad ist keine Hotline und kein Notfall-Support. Bei akuter Gefahr (z. B. Kontoübernahme, Erpressung):
+          Zugangsdaten sichern, Anbieter/Bank kontaktieren und ggf. offizielle Hilfe einholen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <div class="section-head" id="navigation">
+      <h2>Navigation</h2>
+      <div class="hint">Alle Themen auf einen Blick</div>
+    </div>
+
+    <section class="panel" aria-label="Navigation">
+      <div class="content">
+        <div class="navbox" role="navigation" aria-label="Themenliste">
+
+          <a class="navitem" href="/was_ist_serveload.html">
+            <div class="left">Vorstellung</div>
+            <div class="right">Wer/was ServeLoad ist</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/was_ist_serveload.html#tab-ziele">
+            <div class="left">Ziele</div>
+            <div class="right">Worum es inhaltlich geht</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/was_ist_serveload.html#tab-kontakt">
+            <div class="left">Kontakt</div>
+            <div class="right">Feedback, Korrekturen, Hinweise</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/was_bedeutet_cybersecurity.html">
+            <div class="left">Cybersecurity</div>
+            <div class="right">Definition & Grundlagen</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/was_bedeutet_cybersecurity.html#tab-betroffene">
+            <div class="left">Betroffene</div>
+            <div class="right">Wen es betrifft – und warum</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/was_bedeutet_cybersecurity.html#tab-anwendung">
+            <div class="left">Anwendung</div>
+            <div class="right">Wo Cybersecurity praktisch wird</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/gibt_es_schutz.html">
+            <div class="left">Schutz I</div>
+            <div class="right">Einfache Maßnahmen</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/gibt_es_schutz.html#tab-schutz2">
+            <div class="left">Schutz II</div>
+            <div class="right">Fortgeschritten</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+          <a class="navitem" href="/gibt_es_schutz.html#tab-vorsicht">
+            <div class="left">Vorsicht</div>
+            <div class="right">Grenzen & typische Fallen</div>
+            <div class="chev" aria-hidden="true">›</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Für Eltern -->
+    <div class="section-head" id="eltern">
+      <h2>Für Eltern</h2>
+      <div class="hint">Schwerpunkt: Kinder & Jugendliche</div>
+    </div>
+
+    <section class="panel" aria-label="Für Eltern">
+      <div class="content">
+        <div class="grid">
+          <div class="card">
+            <h2>Informationen für Eltern</h2>
+            <p>
+              Praktische Orientierung zu Risiken, die im Alltag mit Kindern und Jugendlichen auftreten können –
+              plus Hinweise, wie man sinnvoll vorbeugt.
+            </p>
+            <!-- Link nur aktivieren, wenn die Seite existiert -->
+            <!-- <a class="more" href="/fuer_eltern.html">Mehr <span aria-hidden="true">›</span></a> -->
+          </div>
+
+          <div class="card">
+            <h2>Baustelle / Platzhalter</h2>
+            <p>
+              Dieser Bereich ist bewusst frei: hier kannst du später z. B. Checklisten, Empfehlungen oder ein kurzes “Erste Hilfe”-Schema unterbringen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extras -->
+    <div class="section-head" id="extras">
+      <h2>Extras</h2>
+      <div class="hint">Später mehr</div>
+    </div>
+
+    <section class="panel" aria-label="Extras">
+      <div class="content">
+        <div class="card">
+          <h2>In Arbeit</h2>
+          <p>
+            Hier ist Platz für Downloads brauchst du nicht (und willst du ja bewusst nicht).
+            Sinnvoll wären z. B. Glossar, Mini-Checklisten, “Was tun wenn…?” Abläufe oder Quellen/Verweise.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <footer>
-      <a href="/-impressum.html">Impressum</a> · <a href="/-datenschutz.html">Datenschutz</a>
+      <a class="back" href="#page-title" aria-label="Nach oben">↑ Nach oben</a>
+      <div class="footlinks">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
     </footer>
 
   </div>
