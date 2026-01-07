@@ -23,8 +23,8 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 
 ## 📄 Seiten / Struktur
 - `index.html` – Startseite
-- `impressum.html` – Impressum
-- `datenschutz.html` – Datenschutz
+- `-impressum.html` – Impressum
+- `-datenschutz.html` – Datenschutz
 
 > Hinweis: Je nach Stand kann das Design über Canva-Embeds eingebunden sein.
 
