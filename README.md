@@ -1,4 +1,4 @@
-# ServeLoad – Cybersecurity Awareness (Website)
+## ServeLoad – Cybersecurity Awareness (Website)
 
 Willkommen im Repository der **ServeLoad**-Website.
 
@@ -9,19 +9,19 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 
 ---
 
-## 🌐 Live-Website
+### 🌐 Live-Website
 - https://serveload.de
 
 ---
 
-## 🎯 Ziel
+### 🎯 Ziel
 - Aufklärung über typische Risiken (z. B. Phishing, Betrug, Account-Diebstahl)
 - Praktische Maßnahmen, die man sofort umsetzen kann
 - Inhalte, die auch für Einsteiger*innen und ältere Nutzer gut lesbar sind
 
 ---
 
-## 📄 Seiten / Struktur
+### 📄 Seiten / Struktur
 - `index.html` – Startseite
 - `-impressum.html` – Impressum
 - `-datenschutz.html` – Datenschutz
@@ -30,16 +30,16 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 
 ---
 
-## 🛠️ Technik
+### 🛠️ Technik
 - Statische Website (HTML/CSS)
 - Hosting: GitHub Pages
 - Domain & DNS: IONOS
 ---
 
-## 💬 Feedback & Kontakt
+### 💬 Feedback & Kontakt
 - kontakt@serveload.de
 
 ---
 
-## 📌 Status
+### 📌 Status
 Work in progress – Inhalte werden laufend ergänzt und verbessert.
