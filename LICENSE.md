@@ -3,7 +3,7 @@
 ### VERSION - EN
 ServeLoad – Source-Available License (Permission required for redistribution/re-hosting)
 
-Copyright (c) [YEAR] [YOUR NAME OR HANDLE]
+Copyright (c) 2026 ServeLoad
 All rights reserved.
 
 This license applies to the source code, design (layout/CSS), and all related contents of this repository (“Software”), unless stated otherwise.
@@ -29,14 +29,14 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 5) Contact for Permissions
 For permissions (reuse, re-hosting, collaboration, commercial use), contact:
-[YOUR CONTACT EMAIL OR URL]
+Kontakt@ServeLoad.de
 
 By using, copying, or modifying the Software, you agree to these terms.
 
 ### VERSION - GER
 ServeLoad – Source-Available Lizenz (Nicht-kommerziell/kommerziell nur mit Erlaubnis)
 
-Copyright (c) [JAHR] [DEIN NAME ODER PSEUDONYM]
+Copyright (c) 2026 ServeLoad
 Alle Rechte vorbehalten.
 
 Diese Lizenz gilt für den Quellcode, das Design (Layout/CSS), sowie alle zugehörigen Inhalte dieses Repositories („Software“), sofern nicht anders gekennzeichnet.
@@ -62,7 +62,7 @@ DIE SOFTWARE WIRD „WIE BESEHEN“ BEREITGESTELLT, OHNE JEGLICHE GEWÄHRLEISTUN
 
 5) Kontakt für Erlaubnisse
 Anfragen für Nutzung, Re-Hosting, Kooperation oder kommerzielle Verwendung bitte an:
-[DEINE KONTAKTMAIL ODER URL]
+Kontakt@ServeLoad.de
 
 Durch das Nutzen, Kopieren oder Modifizieren der Software erklärst du dich mit diesen Bedingungen einverstanden.
 
