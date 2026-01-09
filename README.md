@@ -22,12 +22,12 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 ---
 
 ### 📄 Seiten / Struktur
-- `index.html` – Startseite
-- `-was_ist_serveload.html` – Vostellung ServeLoad
-- `-was_ist_cybersercurity.html` – Cybesrsecurity Erklärung
-- `-gibt_es_schutz.html` – Achtsamkeit und Schutzmaßnahmen
-- `-impressum.html` – Impressum
-- `-datenschutz.html` – Datenschutz
+- Startseite                        `index.html`
+- Vostellung ServeLoad              `-was_ist_serveload.html`
+- Cybesrsecurity Erklärung          `-was_ist_cybersercurity.html`
+- Achtsamkeit und Schutzmaßnahmen   `-gibt_es_schutz.html`
+- Impressum                         `-impressum.html`
+- Datenschutz                       `-datenschutz.html`
 
 ---
 
