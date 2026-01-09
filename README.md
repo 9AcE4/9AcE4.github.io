@@ -3,7 +3,7 @@
 Willkommen im Repository der **ServeLoad**-Website.
 
 ServeLoad ist mein öffentliches Informationsprojekt:  
-Ich möchte Cybersecurity **verständlich, alltagstauglich und ohne Panikmache** erklären – für Menschen, die einfach wissen wollen, wie sie sich online besser schützen können.
+Ich möchte Cybersecurity **verständlich & alltagstauglich** erklären – für alle, die wissen wollen, wie sie sich online besser schützen können.
 
 Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkommen.
 
@@ -23,10 +23,11 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 
 ### 📄 Seiten / Struktur
 - `index.html` – Startseite
+- `-was_ist_serveload.html` – Vostellung ServeLoad
+- `-was_ist_cybersercurity.html` – Cybesrsecurity Erklärung
+- `-gibt_es_schutz.html` – Achtsamkeit und Schutzmaßnahmen
 - `-impressum.html` – Impressum
 - `-datenschutz.html` – Datenschutz
-
-> Hinweis: Je nach Stand kann das Design über Canva-Embeds eingebunden sein.
 
 ---
 
@@ -34,6 +35,7 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 - Statische Website (HTML/CSS)
 - Hosting: GitHub Pages
 - Domain & DNS: IONOS
+
 ---
 
 ### 💬 Feedback & Kontakt
