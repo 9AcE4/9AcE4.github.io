@@ -1,4 +1,4 @@
-## ServeLoad – Cybersecurity aufklärungs (Website)
+## ServeLoad – Cybersecurity aufklärungs Website
 
 Willkommen im Repository der **ServeLoad**-Website.
 
