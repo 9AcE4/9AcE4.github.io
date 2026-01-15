@@ -38,7 +38,7 @@ Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkomme
 `-impressum.html`
 
 - Datenschutz:
---- `-datenschutz.html`
+`-datenschutz.html`
 
 ---
 
