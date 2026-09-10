@@ -1,1 +1,367 @@
+/* =========================================================
+   HINTERGRUND
+   ========================================================= */
 
+.site-bg{
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:0;
+
+  overflow:hidden;
+
+  pointer-events:none;
+
+  background:
+
+    radial-gradient(
+      ellipse at center,
+      rgba(255,255,255,0.012),
+      transparent 65%
+    ),
+
+    var(--bg);
+
+}
+
+/* =========================================================
+   AUTOMATISCHE GLOWS
+   ========================================================= */
+
+.bg-glow{
+
+  position:absolute;
+
+  border-radius:50%;
+
+  filter:blur(140px);
+
+  pointer-events:none;
+
+  will-change:transform;
+
+}
+
+/* ---------- OBEN LINKS ---------- */
+
+.bg-glow-one{
+
+  width:760px;
+
+  height:760px;
+
+  top:-400px;
+
+  left:-360px;
+
+  background:
+    rgba(213,139,60,0.18);
+
+  opacity:0.55;
+
+  animation:
+    glow-one
+    24s
+    ease-in-out
+    infinite
+    alternate;
+
+}
+
+/* ---------- RECHTS ---------- */
+
+.bg-glow-two{
+
+  width:760px;
+
+  height:760px;
+
+  top:28%;
+
+  right:-460px;
+
+  background:
+    rgba(213,139,60,0.10);
+
+  opacity:0.38;
+
+  animation:
+    glow-two
+    30s
+    ease-in-out
+    infinite
+    alternate;
+
+}
+
+/* ---------- UNTEN ---------- */
+
+.bg-glow-three{
+
+  width:720px;
+
+  height:720px;
+
+  left:15%;
+
+  bottom:-480px;
+
+  background:
+    rgba(169,107,46,0.10);
+
+  opacity:0.34;
+
+  animation:
+    glow-three
+    34s
+    ease-in-out
+    infinite
+    alternate;
+
+}
+
+/* =========================================================
+   AUTOMATISCHE BEWEGUNG
+   ========================================================= */
+
+@keyframes glow-one{
+
+  0%{
+
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+
+  }
+
+  50%{
+
+    transform:
+      translate3d(90px,45px,0)
+      scale(1.08);
+
+  }
+
+  100%{
+
+    transform:
+      translate3d(150px,90px,0)
+      scale(1.14);
+
+  }
+
+}
+
+@keyframes glow-two{
+
+  0%{
+
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+
+  }
+
+  50%{
+
+    transform:
+      translate3d(-70px,60px,0)
+      scale(1.08);
+
+  }
+
+  100%{
+
+    transform:
+      translate3d(-140px,-40px,0)
+      scale(1.14);
+
+  }
+
+}
+
+
+
+@keyframes glow-three{
+
+  0%{
+
+    transform:
+      translate3d(0,0,0)
+      scale(1);
+
+  }
+
+  50%{
+
+    transform:
+      translate3d(80px,-70px,0)
+      scale(1.10);
+
+  }
+
+  100%{
+
+    transform:
+      translate3d(-80px,-130px,0)
+      scale(1.16);
+
+  }
+
+}
+
+/* =========================================================
+   MAUS-GLOW
+   ========================================================= */
+
+.mouse-glow{
+
+  position:absolute;
+
+  left:0;
+
+  top:0;
+
+  width:500px;
+
+  height:500px;
+
+  border-radius:50%;
+
+  opacity:0;
+
+  transform:
+    translate(-50%,-50%);
+
+  background:
+
+    radial-gradient(
+      circle,
+
+      rgba(225,155,75,0.16) 0%,
+
+      rgba(213,139,60,0.09) 22%,
+
+      rgba(213,139,60,0.035) 48%,
+
+      transparent 72%
+    );
+
+  filter:blur(12px);
+
+  transition:
+    opacity 0.25s ease;
+
+  pointer-events:none;
+
+  will-change:
+    left,
+    top;
+
+}
+
+/* =========================================================
+   KLICK-GLOW
+   ========================================================= */
+
+.click-glow{
+
+  position:absolute;
+
+  left:0;
+
+  top:0;
+
+  width:300px;
+
+  height:300px;
+
+  border-radius:50%;
+
+  opacity:0;
+
+  transform:
+    translate(-50%,-50%)
+    scale(0.25);
+
+  background:
+
+    radial-gradient(
+      circle,
+
+      rgba(255,207,143,0.34) 0%,
+
+      rgba(229,159,79,0.22) 18%,
+
+      rgba(213,139,60,0.10) 42%,
+
+      transparent 72%
+    );
+
+  filter:blur(8px);
+
+  pointer-events:none;
+
+}
+
+/* ---------- Klickanimation ---------- */
+
+.click-glow.active{
+
+  animation:
+    click-glow
+    650ms
+    ease-out;
+
+}
+
+@keyframes click-glow{
+
+  0%{
+
+    opacity:0.9;
+
+    transform:
+      translate(-50%,-50%)
+      scale(0.20);
+
+  }
+
+  35%{
+
+    opacity:0.65;
+
+  }
+
+  100%{
+
+    opacity:0;
+
+    transform:
+      translate(-50%,-50%)
+      scale(1.15);
+
+  }
+
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+  .bg-glow{
+
+    animation:none;
+
+  }
+
+  .click-glow{
+
+    display:none;
+
+  }
+}
