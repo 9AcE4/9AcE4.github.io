@@ -84,4 +84,4 @@ Details stehen in [`LICENSE.md`](LICENSE.md).
 
 ## Status
 
-ServeLoad befindet sich aktuell im finalen technischen und inhaltlichen Review vor Version 1.0.
+ServeLoad ist in Version 1.0 veröffentlicht.
