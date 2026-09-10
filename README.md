@@ -1,58 +1,87 @@
-## ServeLoad – Cybersecurity aufklärungs Website
+# ServeLoad
 
-Willkommen im Repository der **ServeLoad**-Website.
+**Cybersecurity – verständlich, ohne Drama.**
 
-ServeLoad ist mein öffentliches Informationsprojekt:  
-Ich möchte Cybersecurity **verständlich & alltagstauglich** erklären – für alle, die wissen wollen, wie sie sich online besser schützen können.
+ServeLoad ist ein öffentliches Informations- und Aufklärungsprojekt rund um digitale Sicherheit.
 
-Danke, dass du reinschaust. Feedback, Korrekturen und Vorschläge sind willkommen.
+Ziel ist es, Cybersecurity verständlich, alltagstauglich und ohne unnötige Panikmache zu erklären. Der Schwerpunkt liegt auf Grundlagen, realistischen Risiken, praktischen Schutzmaßnahmen sowie Orientierung für Familien, Eltern, Kinder und Jugendliche.
 
----
+## Live-Website
 
-### 🌐 Live-Website
-- https://serveload.de
+https://serveload.de
 
----
+## Inhalte
 
-### 🎯 Ziel
-- Aufklärung über typische Risiken (z. B. Phishing, Betrug, Account-Diebstahl)
-- Praktische Maßnahmen, die man sofort umsetzen kann
-- Inhalte, die auch für Einsteiger*innen und ältere Nutzer gut lesbar sind
+ServeLoad behandelt unter anderem:
 
----
+- Grundlagen der Cybersecurity,
+- typische digitale Risiken und Betrugsmaschen,
+- Schutz von Konten, Geräten und persönlichen Daten,
+- Mehr-Faktor-Authentifizierung und Wiederherstellung,
+- Backups und grundlegende Sicherheitsstrukturen,
+- digitale Sicherheit im Familienalltag,
+- problematische Kontaktaufnahmen, Manipulation und Gruppendruck,
+- konkrete Handlungsmöglichkeiten, wenn bereits etwas passiert ist.
 
-### 📄 Seiten / Struktur
-- Startseite:
-`index.html`
+## Seiten
 
-- Vostellung ServeLoad:
-`was_ist_serveload.html`
+```text
+/
+├── index.html
+├── CNAME
+├── LICENSE.md
+├── README.md
+├── pages/
+│   ├── -datenschutz.html
+│   ├── -impressum.html
+│   ├── fuer_eltern.html
+│   ├── gibt_es_schutz.html
+│   ├── was_bedeutet_cybersecurity.html
+│   └── was_ist_serveload.html
+├── script/
+│   └── background.js
+└── style/
+    ├── base.css
+    ├── background.css
+    ├── components.css
+    ├── home.css
+    └── pages.css
+```
 
-- Cybesrsecurity Erklärung:
-`was_ist_cybersercurity.html`
+## Technik
 
-- Achtsamkeit und Schutzmaßnahmen:
-`gibt_es_schutz.html`
+- HTML
+- CSS
+- Vanilla JavaScript
+- GitHub Pages
+- eigene Domain über IONOS
 
-- Impressum:
-`-impressum.html`
+Die Website verwendet keine eigenen Analyse- oder Werbetracker und setzt selbst keine Cookies zu Analyse- oder Werbezwecken.
 
-- Datenschutz:
-`-datenschutz.html`
+## Projektstruktur
 
----
+Die Styles sind nach Zuständigkeit getrennt:
 
-### 🛠️ Technik
-- Statische Website (HTML/CSS)
-- Hosting: GitHub Pages
-- Domain & DNS: IONOS
+- `base.css` – globale Grundlagen und Variablen
+- `components.css` – wiederverwendbare Komponenten
+- `background.css` – animierter Seitenhintergrund
+- `home.css` – ausschließlich Startseite
+- `pages.css` – ausschließlich Unterseiten
 
----
+Die Unterseiten verwenden ein gemeinsames Layout mit Header, Navigation, Inhaltsbereichen, Seitenleiste und Footer.
 
-### 💬 Feedback & Kontakt
-- kontakt@serveload.de
+## Feedback und Kontakt
 
----
+Fragen, Hinweise, Korrekturen oder Interesse an einer Mitarbeit:
 
-### 📌 Status
-Work in progress – Inhalte werden laufend ergänzt und verbessert.
+**kontakt@serveload.de**
+
+## Lizenz
+
+ServeLoad ist **source-available**, aber nicht zur freien Weiterverbreitung oder zum öffentlichen Re-Hosting freigegeben.
+
+Details stehen in [`LICENSE.md`](LICENSE.md).
+
+## Status
+
+ServeLoad befindet sich aktuell im finalen technischen und inhaltlichen Review vor Version 1.0.

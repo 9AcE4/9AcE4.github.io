@@ -1,69 +1,96 @@
-### Für die Deutsche Version, schaue weiter unten!
+# ServeLoad – Source-Available License
 
-### VERSION - EN
-ServeLoad – Source-Available License (Permission required for redistribution/re-hosting)
+**Permission is required for redistribution, public re-hosting, or commercial use.**
 
-Copyright (c) 2026 ServeLoad
+Copyright (c) 2026 Pascal Arndt / ServeLoad  
 All rights reserved.
 
-This license applies to the source code, design (layout/CSS), and all related contents of this repository (“Software”), unless stated otherwise.
+This license applies to the source code, design, layout, styles, scripts, and original written content contained in this repository, unless a component is explicitly marked otherwise.
 
-1) Permitted Use
+## English Version
+
+### 1. Permitted Use
+
 You may:
-- view, download, and run the Software locally,
-- create modifications for personal use or learning purposes,
-- quote small parts as reference (with attribution), as long as no substantial parts are copied 1:1.
 
-2) Prohibited Use (without explicit written permission)
-You may NOT:
-- copy, publish, or redistribute the Software (or substantial portions of it),
-- publicly host/re-host the Software (or substantial portions of it) (e.g., as your own website, clone, template, or service),
-- use the Software as the basis of any public or commercial offering,
-- use the branding, name, logo, or identity (“ServeLoad”) in a way that suggests endorsement or causes confusion.
+- view and download the source code,
+- run the project locally,
+- modify the project for private use, learning, or experimentation,
+- quote small excerpts for reference or educational purposes with appropriate attribution.
 
-3) Third-Party Content
-Media assets (images, icons, fonts) may be subject to separate licenses. Such components are excluded from this license if stated elsewhere in the project.
+### 2. Use Requiring Prior Written Permission
 
-4) No Warranty
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. USE AT YOUR OWN RISK.
+Without prior written permission, you may not:
 
-5) Contact for Permissions
-For permissions (reuse, re-hosting, collaboration, commercial use), contact:
-Kontakt@ServeLoad.de
+- copy, publish, redistribute, or provide substantial parts of this project to third parties,
+- publicly host or re-host this project or substantial parts of it,
+- publish modified versions, clones, templates, or derivative websites based substantially on this project,
+- use this project as the basis of a public, commercial, or paid offering,
+- use the name, branding, visual identity, or project identity “ServeLoad” in a way that suggests affiliation, endorsement, or official connection.
 
-By using, copying, or modifying the Software, you agree to these terms.
+Permission requests may be sent to:
 
-### VERSION - GER
-ServeLoad – Source-Available Lizenz (Nicht-kommerziell/kommerziell nur mit Erlaubnis)
+**kontakt@serveload.de**
 
-Copyright (c) 2026 ServeLoad
-Alle Rechte vorbehalten.
+### 3. Third-Party Components
 
-Diese Lizenz gilt für den Quellcode, das Design (Layout/CSS), sowie alle zugehörigen Inhalte dieses Repositories („Software“), sofern nicht anders gekennzeichnet.
+Third-party libraries, fonts, media, or other external components are subject to their respective licenses and terms.
 
-1) Erlaubte Nutzung
+Where such components are used, this license does not replace or override the rights of their respective authors or providers.
+
+### 4. No Warranty
+
+THE PROJECT IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+USE OF THE PROJECT IS AT YOUR OWN RISK.
+
+### 5. No Transfer of Rights
+
+Access to this repository does not transfer ownership of the project, branding, design, or original content.
+
+Any rights not explicitly granted by this license remain reserved.
+
+---
+
+## Deutsche Version
+
+### 1. Erlaubte Nutzung
+
 Du darfst:
-- den Quellcode einsehen, herunterladen und lokal ausführen,
-- Änderungen für den privaten Gebrauch oder zu Lernzwecken erstellen,
-- Teile als Referenz zitieren (mit Quellenangabe), sofern keine wesentlichen Teile 1:1 übernommen werden.
 
-2) Untersagte Nutzung (ohne ausdrückliche schriftliche Erlaubnis)
-Du darfst NICHT:
-- die Software (oder wesentliche Teile davon) kopieren, veröffentlichen oder weiterverbreiten,
-- die Software (oder wesentliche Teile davon) öffentlich hosten/re-hosting betreiben (z. B. als eigene Website, Klon, Template oder Service),
-- die Software als Grundlage für ein eigenes (öffentliches oder kommerzielles) Angebot nutzen,
-- Branding, Namen, Logo oder Projektidentität („ServeLoad“) übernehmen oder so nutzen, dass Verwechslung entsteht.
+- den Quellcode einsehen und herunterladen,
+- das Projekt lokal ausführen,
+- das Projekt für private Zwecke, zum Lernen oder zum Experimentieren verändern,
+- kleine Ausschnitte zu Referenz- oder Lernzwecken mit angemessener Quellenangabe zitieren.
 
-3) Inhalte Dritter
-Medien (Bilder, Icons, Fonts) können gesonderten Lizenzen unterliegen. Solche Bestandteile sind von dieser Lizenz ausgenommen, sofern im Projekt anders angegeben.
+### 2. Nutzung nur mit vorheriger schriftlicher Erlaubnis
 
-4) Keine Gewährleistung
-DIE SOFTWARE WIRD „WIE BESEHEN“ BEREITGESTELLT, OHNE JEGLICHE GEWÄHRLEISTUNG, AUSDRÜCKLICH ODER STILLSCHWEIGEND. DIE NUTZUNG ERFOLGT AUF EIGENES RISIKO.
+Ohne vorherige schriftliche Erlaubnis darfst du nicht:
 
-5) Kontakt für Erlaubnisse
-Anfragen für Nutzung, Re-Hosting, Kooperation oder kommerzielle Verwendung bitte an:
-Kontakt@ServeLoad.de
+- das Projekt oder wesentliche Teile davon kopieren, veröffentlichen, weitergeben oder verbreiten,
+- das Projekt oder wesentliche Teile davon öffentlich hosten oder re-hosten,
+- veränderte Fassungen, Klone, Templates oder abgeleitete Websites veröffentlichen, die wesentlich auf diesem Projekt basieren,
+- das Projekt als Grundlage für ein öffentliches, kommerzielles oder kostenpflichtiges Angebot verwenden,
+- den Namen, das Branding, die visuelle Identität oder die Projektidentität „ServeLoad“ so verwenden, dass eine Zugehörigkeit, Unterstützung oder offizielle Verbindung suggeriert wird.
 
-Durch das Nutzen, Kopieren oder Modifizieren der Software erklärst du dich mit diesen Bedingungen einverstanden.
+Anfragen für eine entsprechende Nutzung können gerichtet werden an:
 
+**kontakt@serveload.de**
 
+### 3. Inhalte und Komponenten Dritter
+
+Bibliotheken, Fonts, Medien oder andere externe Bestandteile können eigenen Lizenzen und Nutzungsbedingungen unterliegen.
+
+Soweit solche Bestandteile verwendet werden, ersetzt oder überschreibt diese Lizenz nicht die Rechte der jeweiligen Urheber oder Anbieter.
+
+### 4. Keine Gewährleistung
+
+DAS PROJEKT WIRD „WIE BESEHEN“ UND OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT.
+
+DIE NUTZUNG ERFOLGT AUF EIGENES RISIKO.
+
+### 5. Keine Übertragung von Rechten
+
+Der Zugriff auf dieses Repository überträgt keine Eigentums- oder Nutzungsrechte am Projekt, am Branding, am Design oder an den ursprünglichen Inhalten, die nicht ausdrücklich durch diese Lizenz eingeräumt werden.
+
+Alle nicht ausdrücklich eingeräumten Rechte bleiben vorbehalten.
