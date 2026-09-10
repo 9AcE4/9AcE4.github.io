@@ -1,1 +1,401 @@
+/* =========================================================
+   BRAND
+   ========================================================= */
 
+.brand{
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:6px;
+
+}
+
+.brand .name{
+
+  font-size:24px;
+
+  line-height:1.1;
+
+  font-weight:800;
+
+  letter-spacing:-0.3px;
+
+}
+
+.brand .tag{
+
+  margin-top:5px;
+
+  color:var(--muted2);
+
+  font-size:12px;
+
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:32px;
+
+  margin-bottom:0;
+
+  padding:
+    18px
+    0
+    26px;
+
+  border-bottom:
+    1px solid var(--border);
+
+}
+
+.site-header .brand{
+
+  flex-shrink:0;
+
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.main-nav{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:flex-end;
+
+  flex-wrap:wrap;
+
+  gap:24px;
+
+}
+
+.main-nav a{
+
+  position:relative;
+
+  padding:6px 0;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  font-weight:600;
+
+  transition:
+    color 0.2s ease;
+
+}
+
+.main-nav a::after{
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+
+  bottom:0;
+
+  width:0;
+
+  height:2px;
+
+  background:var(--accent);
+
+  transition:
+    width 0.2s ease;
+
+}
+
+.main-nav a:hover{
+
+  color:var(--text);
+
+}
+
+.main-nav a:hover::after{
+
+  width:100%;
+
+}
+
+/* =========================================================
+   KICKER
+   ========================================================= */
+
+.kicker{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  color:var(--muted);
+
+  font-size:13px;
+
+}
+
+.kicker .bar{
+
+  width:38px;
+
+  height:3px;
+
+  border-radius:999px;
+
+  background:var(--accent);
+
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  min-height:44px;
+
+  padding:
+    11px
+    18px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:8px;
+
+  font-size:14px;
+
+  font-weight:700;
+
+  transition:
+
+    background 0.2s ease,
+
+    border-color 0.2s ease,
+
+    color 0.2s ease,
+
+    transform 0.08s ease;
+
+}
+
+.btn.primary{
+
+  border-color:
+    rgba(213,139,60,0.45);
+
+  background:
+    rgba(213,139,60,0.12);
+
+  color:var(--text);
+
+}
+
+.btn.primary:hover{
+
+  border-color:
+    rgba(213,139,60,0.70);
+
+  background:
+    rgba(213,139,60,0.20);
+
+  color:var(--text);
+
+}
+
+.btn.secondary{
+
+  background:transparent;
+
+  color:var(--muted);
+
+}
+
+.btn.secondary:hover{
+
+  border-color:
+    rgba(255,255,255,0.22);
+
+  background:
+    rgba(255,255,255,0.025);
+
+  color:var(--text);
+
+}
+
+.btn:active{
+
+  transform:
+    translateY(1px);
+
+}
+
+/* =========================================================
+   TEXT-LINK
+   ========================================================= */
+
+.text-link{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  font-weight:600;
+
+}
+
+.text-link:hover{
+
+  color:var(--accent);
+
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-top:0;
+
+  padding-top:24px;
+
+  border-top:
+    1px solid var(--border);
+
+  color:var(--muted2);
+
+  font-size:13px;
+
+}
+
+.footlinks{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+}
+
+.footlinks a{
+
+  color:var(--muted2);
+
+}
+
+.footlinks a:hover{
+
+  color:var(--accent);
+
+}
+
+.back{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  padding:0;
+
+  border:0;
+
+  background:none;
+
+  color:var(--muted2);
+
+}
+
+.back:hover{
+
+  color:var(--accent);
+
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width:760px){
+
+  .site-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+  }
+
+  .main-nav{
+
+    justify-content:flex-start;
+
+    gap:
+      16px
+      22px;
+
+  }
+
+}
+
+@media (max-width:480px){
+
+  .wrap{
+
+    padding-left:18px;
+
+    padding-right:18px;
+
+  }
+
+  .btn{
+
+    width:100%;
+
+  }
+}
