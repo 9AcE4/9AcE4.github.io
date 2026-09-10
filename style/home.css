@@ -1,1 +1,554 @@
+/* =========================================================
+   HERO
+   ========================================================= */
 
+.hero{
+
+  position:relative;
+
+  margin:0;
+
+  padding:
+    90px
+    0
+    96px;
+
+}
+
+.hero .kicker{
+
+  margin:
+    0
+    0
+    20px;
+
+}
+
+.hero h1{
+
+  max-width:760px;
+
+  margin:0;
+
+  font-size:
+    clamp(
+      42px,
+      7vw,
+      72px
+    );
+
+  line-height:1.02;
+
+  letter-spacing:-2.5px;
+
+}
+
+.hero-lead{
+
+  max-width:720px;
+
+  margin:
+    24px
+    0
+    0;
+
+  color:var(--muted);
+
+  font-size:17px;
+
+  line-height:1.7;
+
+}
+
+.hero-actions{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:16px;
+
+  margin-top:34px;
+
+}
+
+/* =========================================================
+   SEKTIONEN
+   ========================================================= */
+
+.section{
+
+  padding:
+    76px
+    0;
+
+  border-top:
+    1px solid var(--border);
+
+}
+
+.section-heading{
+
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(220px,0.6fr);
+
+  gap:40px;
+
+  align-items:end;
+
+  margin-bottom:42px;
+
+}
+
+.section-heading h2{
+
+  margin:
+    7px
+    0
+    0;
+
+  font-size:32px;
+
+  letter-spacing:-0.8px;
+
+}
+
+.section-heading > p{
+
+  margin:0;
+
+  color:var(--muted);
+
+  line-height:1.6;
+
+}
+
+.eyebrow{
+
+  color:var(--accent);
+
+  font-size:12px;
+
+  font-weight:800;
+
+  letter-spacing:1.4px;
+
+  text-transform:uppercase;
+
+}
+
+/* =========================================================
+   THEMEN
+   ========================================================= */
+
+.topic-list{
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+.topic{
+
+  display:grid;
+
+  grid-template-columns:
+    80px
+    minmax(0,1fr);
+
+  gap:26px;
+
+  padding:
+    30px
+    0;
+
+  border-top:
+    1px solid var(--border);
+
+}
+
+.topic:first-child{
+
+  border-top:0;
+
+}
+
+.topic-number{
+
+  padding-top:4px;
+
+  color:var(--muted2);
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:1px;
+
+}
+
+.topic-content{
+
+  max-width:720px;
+
+}
+
+.topic-content h3{
+
+  margin:0;
+
+  font-size:22px;
+
+  letter-spacing:-0.3px;
+
+}
+
+.topic-content p{
+
+  margin:
+    10px
+    0
+    0;
+
+  color:var(--muted);
+
+  line-height:1.65;
+
+}
+
+.more{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  margin-top:14px;
+
+  color:var(--accent);
+
+  font-size:14px;
+
+  font-weight:700;
+
+}
+
+.more span{
+
+  transition:
+    transform 0.2s ease;
+
+}
+
+.more:hover{
+
+  color:var(--accent);
+
+}
+
+.more:hover span{
+
+  transform:
+    translateX(3px);
+
+}
+
+/* =========================================================
+   ELTERN
+   ========================================================= */
+
+.parent-layout{
+
+  display:grid;
+
+  grid-template-columns:
+    minmax(0,1.5fr)
+    minmax(220px,0.5fr);
+
+  gap:64px;
+
+  align-items:center;
+
+}
+
+.parent-copy{
+
+  max-width:680px;
+
+}
+
+.parent-copy h3{
+
+  margin:0;
+
+  font-size:26px;
+
+  line-height:1.25;
+
+  letter-spacing:-0.5px;
+
+}
+
+.parent-copy p{
+
+  margin:
+    16px
+    0
+    0;
+
+  color:var(--muted);
+
+  line-height:1.7;
+
+}
+
+.parent-actions{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:flex-start;
+
+  gap:18px;
+
+}
+
+/* =========================================================
+   NOTFALL
+   ========================================================= */
+
+.emergency{
+
+  display:grid;
+
+  grid-template-columns:
+    150px
+    minmax(0,1fr);
+
+  gap:36px;
+
+  align-items:start;
+
+}
+
+.emergency-label{
+
+  padding-top:7px;
+
+  color:var(--accent);
+
+  font-size:12px;
+
+  font-weight:800;
+
+  letter-spacing:1.3px;
+
+  text-transform:uppercase;
+
+}
+
+.emergency-content{
+
+  max-width:720px;
+
+}
+
+.emergency-content h2{
+
+  margin:0;
+
+  font-size:28px;
+
+  letter-spacing:-0.5px;
+
+}
+
+.emergency-content p{
+
+  margin:
+    14px
+    0
+    0;
+
+  color:var(--muted);
+
+  line-height:1.7;
+
+}
+
+/* =========================================================
+   TRANSPARENZ
+   ========================================================= */
+
+.transparency{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:22px;
+
+  padding:
+    28px
+    0;
+
+  border-top:
+    1px solid var(--border);
+
+  color:var(--muted2);
+
+  font-size:12px;
+
+}
+
+.transparency span{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+}
+
+.transparency span::before{
+
+  content:"";
+
+  width:5px;
+
+  height:5px;
+
+  border-radius:50%;
+
+  background:var(--accent);
+
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width:760px){
+
+  .hero{
+
+    padding:
+      64px
+      0
+      70px;
+
+  }
+
+  .hero h1{
+
+    letter-spacing:-1.5px;
+
+  }
+
+  .section{
+
+    padding:
+      58px
+      0;
+
+  }
+
+  .section-heading{
+
+    grid-template-columns:1fr;
+
+    gap:14px;
+
+    margin-bottom:30px;
+
+  }
+
+  .section-heading h2{
+
+    font-size:28px;
+
+  }
+
+  .topic{
+
+    grid-template-columns:
+      44px
+      minmax(0,1fr);
+
+    gap:16px;
+
+    padding:
+      26px
+      0;
+
+  }
+
+  .parent-layout{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+  }
+
+  .emergency{
+
+    grid-template-columns:1fr;
+
+    gap:12px;
+
+  }
+
+}
+
+@media (max-width:480px){
+
+  .hero{
+
+    padding-top:52px;
+
+    padding-bottom:58px;
+
+  }
+
+  .hero-lead{
+
+    font-size:16px;
+
+  }
+
+  .hero-actions{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+  }
+
+  .topic{
+
+    grid-template-columns:1fr;
+
+    gap:8px;
+
+  }
+
+  .topic-number{
+
+    padding:0;
+
+  }
+
+  .parent-copy h3{
+
+    font-size:23px;
+
+  }
+}
