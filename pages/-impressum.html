@@ -1,49 +1,98 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Impressum – ServeLoad</title>
-  <style>
-    body{margin:0;background:#0b0b0d;color:#eee;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    .wrap{max-width:980px;margin:0 auto;padding:24px 16px}
-    a {
-       color:#ff8a2a;
-       text-decoration: none;
-    }
-    a:hover {text-decoration: underline;}
-    .card{background:#141418;border:1px solid #222;border-radius:12px;padding:16px}
-    h1{margin:0 0 12px}
-    p,li{line-height:1.5}
-  </style>
+
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/background.css" />
+  <link rel="stylesheet" href="/style/components.css" />
+  <link rel="stylesheet" href="/style/pages.css" />
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>Impressum</h1>
 
-    <div class="card">
-      <p><strong>Angaben gemäß § 5 TMG</strong></p>
-      <p>
-        ServeLoad<br>
-        Auf der Holland 49<br>
-        32257 Bünde<br>
-        Deutschland
-      </p>
-
-      <p><strong>Kontakt</strong><br>
-        E-Mail: <a href="mailto:kontakt@serveload.de">kontakt@serveload.de</a>
-      </p>
-
-      <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br>
-        ServeLoad
-      </p>
-
-      <p style="opacity:.8;font-size:13px;margin-top:16px">
-        Hinweis: Diese Website dient der allgemeinen Information und stellt keine Rechtsberatung dar.
-      </p>
-    </div>
-
-    <p style="margin-top:16px"><a href="/">← Zur Startseite</a></p>
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-glow bg-glow-one"></div>
+    <div class="bg-glow bg-glow-two"></div>
+    <div class="bg-glow bg-glow-three"></div>
+    <div class="mouse-glow"></div>
+    <div class="click-glow"></div>
   </div>
+
+  <div class="wrap">
+
+    <header class="site-header">
+      <div class="brand">
+        <a class="name" href="/">ServeLoad</a>
+        <div class="tag">Cybersecurity – verständlich, ohne Drama.</div>
+      </div>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="/pages/was_ist_serveload.html">ServeLoad</a>
+        <a href="/pages/was_bedeutet_cybersecurity.html">Cybersecurity</a>
+        <a href="/pages/gibt_es_schutz.html">Schutz</a>
+        <a href="/pages/fuer_eltern.html">Für Eltern</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="kicker"><span class="bar"></span><span>Rechtliches</span></div>
+        <h1 id="page-title">Impressum</h1>
+      </section>
+
+      <section class="page-content">
+        <div class="content-flow">
+
+          <section class="content-section">
+            <p><strong>Angaben gemäß § 5 TMG</strong></p>
+            <p>
+              ServeLoad<br>
+              Auf der Holland 49<br>
+              32257 Bünde<br>
+              Deutschland
+            </p>
+          </section>
+
+          <section class="content-section">
+            <p><strong>Kontakt</strong><br>
+              E-Mail: <a href="mailto:kontakt@serveload.de">kontakt@serveload.de</a>
+            </p>
+          </section>
+
+          <section class="content-section">
+            <p><strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br>
+              ServeLoad
+            </p>
+          </section>
+
+          <section class="content-section">
+            <p>
+              Hinweis: Diese Website dient der allgemeinen Information und stellt keine Rechtsberatung dar.
+            </p>
+          </section>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <a class="back" href="/" aria-label="Zur Startseite">← Zur Startseite</a>
+
+      <div class="footlinks">
+        <a href="/pages/-impressum.html">Impressum</a>
+        <a href="/pages/-datenschutz.html">Datenschutz</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="/script/background.js"></script>
+
 </body>
 </html>

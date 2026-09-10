@@ -1,345 +1,228 @@
 <!doctype html>
 <html lang="de">
 
-<!-- Metadaten -->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title> Was ist Cybersecurity? – ServeLoad </title>
   <meta name="description" content="ServeLoad erklärt Cybersecurity verständlich – ohne Drama. Vorstellung, Ziele und Kontakt." />
-  <link rel="stylesheet" href="/style/legacy.css">
+
+  <link rel="stylesheet" href="/style/base.css" />
+  <link rel="stylesheet" href="/style/background.css" />
+  <link rel="stylesheet" href="/style/components.css" />
+  <link rel="stylesheet" href="/style/pages.css" />
 </head>
 
-<!-- Website - Start -->
 <body>
 
-  <!-- Kopfzeile -->
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-glow bg-glow-one"></div>
+    <div class="bg-glow bg-glow-two"></div>
+    <div class="bg-glow bg-glow-three"></div>
+    <div class="mouse-glow"></div>
+    <div class="click-glow"></div>
+  </div>
+
   <div class="wrap">
-    <header>
+
+    <header class="site-header">
       <div class="brand">
-        <div class="name"> ServeLoad </div>
+        <a class="name" href="/">ServeLoad</a>
         <div class="tag"> Ihre Platform für Cybersecurity </div>
       </div>
-      <div class="chips" aria-label="Transparenz-Hinweise">
-        <span class="chip"> Keine Anmeldung </span>
-        <span class="chip"> Kein Tracking </span>
-        <span class="chip"> Keine Downloads </span>
-      </div>
+
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="/pages/was_ist_serveload.html">ServeLoad</a>
+        <a href="/pages/was_bedeutet_cybersecurity.html">Cybersecurity</a>
+        <a href="/pages/gibt_es_schutz.html">Schutz</a>
+        <a href="/pages/fuer_eltern.html">Für Eltern</a>
+      </nav>
     </header>
 
-    <!-- Catcher / Header Box -->
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-inner">
+    <main>
+
+      <section class="page-hero" aria-labelledby="page-title">
         <div class="kicker"><span class="bar"></span><span> Aufklärung </span></div>
         <h1 id="page-title"> Was bedeutet Cybersecurity? </h1>
-        <p class="sub">
-          Cybersecurity bedeutet, digitale Geräte, Konten und Daten vor Missbrauch zu Schützen <br>
+        <p class="page-intro">
+          Cybersecurity bedeutet, digitale Geräte, Konten und Daten vor Missbrauch zu Schützen<br>
           Es geht darum, Risiken zu verstehen und mit geeigneten Maßnahmen Schäden zu vermeiden
         </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- Tabs - Start -->
-    <section class="panel" aria-label="Inhalte als Tabs">
-      <div class="tabbar" role="tablist" aria-label="ServeLoad Tabs">
-        <button class="tabbtn" role="tab" id="tab-cybersecurity" aria-controls="panel-cybersecurity" aria-selected="true">
+      <div class="page-tabs" role="tablist" aria-label="ServeLoad Tabs">
+        <button class="page-tab" role="tab" id="tab-cybersecurity"
+                aria-controls="panel-cybersecurity" aria-selected="true">
           Cybersecurity
         </button>
-        <button class="tabbtn" role="tab" id="tab-anwendung" aria-controls="panel-anwendung" aria-selected="false" tabindex="-1">
+        <button class="page-tab" role="tab" id="tab-anwendung"
+                aria-controls="panel-anwendung" aria-selected="false" tabindex="-1">
           Anwendung
         </button>
-        <button class="tabbtn" role="tab" id="tab-betroffene" aria-controls="panel-betroffene" aria-selected="false" tabindex="-1">
+        <button class="page-tab" role="tab" id="tab-betroffene"
+                aria-controls="panel-betroffene" aria-selected="false" tabindex="-1">
           Betroffene
         </button>
       </div>
 
-      <!-- Aufbau Card Bereich -->
-      <div class="content">
-        
-        <!-- Tab Cybersecurity - Card 1-->
-        <div id="panel-cybersecurity" role="tabpanel" aria-labelledby="tab-cybersecurity">
-          <div class="grid">
-            <div class="card">
-              <h2> Cybersecurity ausführlich </h2>
-              <p>
-                Cybersecurity (auch: IT-Sicherheit oder digitale Sicherheit) beschreibt den Schutz von digitalen Systemen und Informationen vor ungewollten Zugriffen, Manipulation, Ausfällen und Missbrauch.
-                Gemeint ist damit nicht nur „Hacker abwehren“, sondern das gesamte Zusammenspiel aus Technik, Regeln und Verhalten, das dafür sorgt, dass digitale Dinge zuverlässig funktionieren – und dass Daten so genutzt werden, wie es vorgesehen ist. <br>
-                <br>
-                Im Kern geht es um drei Grundziele, die man in der IT-Sicherheit immer wieder findet:
-              </p>
-              
-              <ul class="bullets">
-                <li> Vertraulichkeit: Informationen sollen nur von den Personen gesehen werden, die dazu berechtigt sind </li>
-                <li> Integrität: Daten und Systeme sollen korrekt bleiben und nicht heimlich verändert werden können </li>
-                <li> Verfügbarkeit: Dienste und Geräte sollen erreichbar und nutzbar bleiben – auch wenn etwas schiefgeht oder jemand stört </li>
-              </ul>
-              <br>
+      <section class="page-content">
+        <div class="page-grid">
 
-              <p>
+          <div>
+
+            <div class="page-panel" id="panel-cybersecurity"
+                 role="tabpanel" aria-labelledby="tab-cybersecurity">
+<section class="content-section"><h2> Cybersecurity ausführlich </h2><p>
+                Cybersecurity (auch: IT-Sicherheit oder digitale Sicherheit) beschreibt den Schutz von digitalen Systemen und Informationen vor ungewollten Zugriffen, Manipulation, Ausfällen und Missbrauch.
+                Gemeint ist damit nicht nur „Hacker abwehren“, sondern das gesamte Zusammenspiel aus Technik, Regeln und Verhalten, das dafür sorgt, dass digitale Dinge zuverlässig funktionieren – und dass Daten so genutzt werden, wie es vorgesehen ist. <br/>
+<br/>
+                Im Kern geht es um drei Grundziele, die man in der IT-Sicherheit immer wieder findet:
+              </p><ul class="page-list">
+<li> Vertraulichkeit: Informationen sollen nur von den Personen gesehen werden, die dazu berechtigt sind </li>
+<li> Integrität: Daten und Systeme sollen korrekt bleiben und nicht heimlich verändert werden können </li>
+<li> Verfügbarkeit: Dienste und Geräte sollen erreichbar und nutzbar bleiben – auch wenn etwas schiefgeht oder jemand stört </li>
+</ul><p>
                 Cybersecurity ist dabei kein einzelnes „Feature“, das man einmal einschaltet und dann ist alles gut.
                 Es ist eher wie ein Sicherheitsgurt im Auto plus Airbags plus Verkehrsregeln: Einzelne Maßnahmen helfen, aber erst die Kombination macht es robust.
                 Deshalb umfasst Cyber-Security viele Bausteine – von Geräteschutz über Netzwerke bis hin zu den Konten, die wir täglich nutzen.
-              </p>
-              <br>
-
-              <p>
+              </p><p>
                 Ein wichtiger Punkt: Cybersecurity ist nicht nur „Angriff vs. Abwehr“.
                 Es geht auch um Fehlervermeidung und Schadensbegrenzung.
                 Systeme sollen so gebaut und eingestellt sein, dass typische Probleme nicht passieren – und falls doch, dass sie nicht gleich alles lahmlegen oder irreversible Schäden verursachen.
                 Dazu gehören z. B. saubere Updates, sichere Grundeinstellungen, klare Zugriffsregeln und gute Wiederherstellungswege.
-              </p>
-              <br>
-
-              <p>
+              </p><p>
                 Cybersecurity beschäftigt sich außerdem mit Bedrohungen: also damit, welche Risiken überhaupt existieren und wie sie entstehen.
                 Manche Risiken sind technisch (z. B. Sicherheitslücken in Software), andere entstehen durch Täuschung (z. B. gefälschte Nachrichten oder Websites), und wieder andere durch schlechte Prozesse (z. B. unsichere Passwörter, fehlende Aktualisierung, unklare Zuständigkeiten).
                 Oft ist es eine Mischung aus allem.
-              </p>
-              <br>
-
-              <p>
+              </p><p>
                 Was Cybersecurity „gut“ macht, ist nicht maximale Komplexität – sondern Kontrolle und Klarheit:Welche Daten gibt es?
                 Wo liegen sie?
                 Wer darf worauf zugreifen?
                 Was passiert, wenn etwas kompromittiert wird?
                 Wie erkennt man ungewöhnliches Verhalten?
                 Wie kann man einen Schaden begrenzen und anschließend wieder sicher arbeiten?
-              </p>
-              <br>
-
-              <p>
+              </p><p>
                 Gute Cybersecurity wirkt deshalb häufig unspektakulär.
                 Sie macht im Hintergrund das Richtige: schützt Zugänge, reduziert Angriffsflächen, verhindert unnötige Freigaben, sorgt für Nachvollziehbarkeit und hält Systeme stabil.
                 Das Ziel ist nicht, überall Angst zu sehen – sondern Risiken realistisch einzuschätzen und sinnvolle Standards umzusetzen.
-              </p>
-              <br>
-
-              <p>
+              </p><p>
                 Kurz gesagt:
                 Cyber-Security bedeutet, digitale Systeme so zu gestalten und zu betreiben, dass sie zuverlässig, korrekt und geschützt bleiben – auch dann, wenn Fehler passieren oder jemand es bewusst darauf anlegt.
-              </p>
-
+              </p></section>
             </div>
-            
-            <div class="card">
-              <div class="kicker"><span class="bar"></span><span> Links </span></div>
-              <h2> Verzeichnis/Navigation </h2>
-              <p>
-                <a href="/">                                  <span class="orange" aria-hidden="true"> → </span> Startseite                   </a><br>
-                <a href="/pages/was_ist_serveload.html">            <span class="orange" aria-hidden="true"> → </span> Was ist ServeLoad?           </a><br>
-                <a href="/pages/was_bedeutet_cybersecurity.html">   <span class="orange" aria-hidden="true"> → </span> Was bedeutet Cyber_Security? </a><br>
-                <a href="/pages/gibt_es_schutz.html">               <span class="orange" aria-hidden="true"> → </span> Gibt es Schutz?              </a><br>
-              </p>
 
-              <!-- Abstandshalter -->
-              <br>
-              <br>
-              <br>
-              
-              <div class="kicker"><span class="bar"></span><span> Hinweise </span></div>
-              <h2> Wichtig! </h2>
-              <p> Bei akuter Gefahr direkt handeln: </p>
-              <ul class="bullets">
-                <li> Bank/Behörde kontaktieren </li>
-                <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
-                <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-
-        <!-- Anwendung -->
-        <div id="panel-anwendung" role="tabpanel" aria-labelledby="tab-anwendung" hidden>
-          <div class="grid">
-            <div class="card">
-              <h2> Anwendungsgebiete </h2>
-              <p>
+            <div class="page-panel" id="panel-anwendung"
+                 role="tabpanel" aria-labelledby="tab-anwendung" hidden>
+<section class="content-section"><h2> Anwendungsgebiete </h2><p>
                 Cybersecurity zeigt sich überall dort, wo digitale Systeme genutzt, verbunden oder verwaltet werden.
                 Das Thema ist so breit, weil moderne Technik selten „für sich allein“ läuft: Geräte tauschen Daten aus, Dienste greifen ineinander, und vieles passiert im Hintergrund automatisch.
                 Genau an diesen Schnittstellen entstehen typische Angriffsflächen – und genau dort setzt Cyber-Security an.
-              </p>
-              <br>
-
-              <h2> 1) Geräte und Betriebssysteme </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 1) Geräte und Betriebssysteme </h2><p>
                 Computer, Smartphones, Tablets und auch Smart-TVs oder Spielkonsolen sind heute komplette Plattformen mit Apps, Konten und Zugriffen.
                 Hier geht es um Stabilität, Zugriffskontrolle und die Frage, welche Software welche Rechte hat.
-              </p>
-              <br>
-
-              <h2> 2) Konten, Logins & Digitale Identität </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 2) Konten, Logins &amp; Digitale Identität </h2><p>
                 Viele digitale Vorgänge hängen an Benutzerkonten: E-Mail, Cloud, soziale Netzwerke, Messenger, Shopping, Abos.
                 Ein Konto ist oft der „Schlüsselbund“ zu mehreren Diensten – inklusive gespeicherter Daten, Kontakte und Zahlungswege.
-              </p>
-              <br>
-
-              <h2> 3) Netzwerke & Verbindungen </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 3) Netzwerke &amp; Verbindungen </h2><p>
                 Sobald etwas online ist, spielt das Netzwerk mit: WLAN, Router, Mobilfunk, Bluetooth, Hotspots, Heimnetz und VPNs.
                 Hier entscheidet sich, wie Daten fließen – und ob Verbindungen sauber getrennt oder unnötig offen sind.
-              </p>
-              <br>
-
-              <h2> 4) Web, Apps & Online-Dienste </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 4) Web, Apps &amp; Online-Dienste </h2><p>
                 Websites, Web-Apps, Streaming, Online-Speicher, Kalender, Passwort-Manager oder Banking-Portale: Viele Funktionen laufen heute nicht mehr lokal, sondern in Diensten.
                 Dabei entstehen Abhängigkeiten zwischen Geräten, Browsern, Apps und Servern.
-              </p>
-              <br>
-
-              <h2> 5) Daten & Dokumente </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 5) Daten &amp; Dokumente </h2><p>
                 Fotos, Dateien, Backups, Kontakte, Notizen, Chat-Verläufe – vieles liegt verteilt: lokal, in der Cloud oder auf externen Speichern.
                 Cyber-Security betrifft hier vor allem Zugriff, Verfügbarkeit und die Frage, was passiert, wenn Daten verloren gehen oder verändert werden.
-              </p>
-              <br>
-
-              <h2> 6) Smart-Home & vernetzte Geräte </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 6) Smart-Home &amp; vernetzte Geräte </h2><p>
                 Kameras, Lautsprecher, Lampen, Thermostate, Staubsauger-Roboter, Türsysteme – alles, was „smart“ ist, ist auch ein Computer mit Netzwerk.
                 Oft sind diese Geräte klein, günstig und lange im Einsatz – genau das macht sie sicherheitstechnisch interessant.
-              </p>
-              <br>
-
-              <h2> 7) Unternehmen und Organisationen </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 7) Unternehmen und Organisationen </h2><p>
                 In größeren Umgebungen kommen weitere Themen dazu: Benutzerverwaltung, Geräteflotten, Remote-Zugriff, interne Systeme, Lieferketten, Dienstleister und klare Rollen.
                 Je vernetzter die Prozesse, desto wichtiger wird saubere Struktur.
-              </p>
-              <br>
-
-              <h2> 8) Software-Entwicklung & IT-Betrieb </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 8) Software-Entwicklung &amp; IT-Betrieb </h2><p>
                 Auch „hinter den Kulissen“ ist Cyber-Security relevant: Updates, Server, APIs, Berechtigungen, Protokolle, Monitoring, Fehlerbehandlung.
                 Das ist der Bereich, in dem Sicherheit mit Qualität und Zuverlässigkeit zusammenhängt.
-              </p>
-              <br>
-
-              <h2> 9) Kommunikation & Informationslage </h2>
-              <p>
+              </p></section><section class="content-section"><h2> 9) Kommunikation &amp; Informationslage </h2><p>
                 Ein Teil des Themas ist nicht rein technisch: Die Art, wie Informationen vermittelt werden (z. B. Warnungen, Meldungen, Identitätsprüfung, Vertrauen in Quellen), beeinflusst, wie sicher Entscheidungen im digitalen Alltag ausfallen.
-              </p>
-              <br>
-
-              <h2> Unterm Strich: </h2>
-              <p>
+              </p></section><section class="content-section"><h2> Unterm Strich: </h2><p>
                 Cybersecurity ist kein einzelnes Feld, sondern zieht sich durch Geräte, Konten, Netzwerke, Dienste und Daten.
                 Je mehr Komponenten miteinander sprechen, desto wichtiger wird Übersicht – also zu wissen, was wovon abhängt und wo die kritischen Übergänge liegen.
-              </p>
-              <br>
-              
+              </p></section>
             </div>
-            
-            <div class="card">
-              <div class="kicker"><span class="bar"></span><span> Links </span></div>
-              <h2> Verzeichnis/Navigation </h2>
-              <p>
-                <a href="/">                                  <span class="orange" aria-hidden="true"> → </span> Startseite                   </a><br>
-                <a href="/pages/was_ist_serveload.html">            <span class="orange" aria-hidden="true"> → </span> Was ist ServeLoad?           </a><br>
-                <a href="/pages/was_bedeutet_cybersecurity.html">   <span class="orange" aria-hidden="true"> → </span> Was bedeutet Cyber_Security? </a><br>
-                <a href="/pages/gibt_es_schutz.html">               <span class="orange" aria-hidden="true"> → </span> Gibt es Schutz?              </a><br>
-              </p>
-              <br>
-              <br>
-              <br>
-              <div class="kicker"><span class="bar"></span><span> Hinweise </span></div>
-              <h2> Wichtig! </h2>
-              <p> Bei akuter Gefahr direkt handeln: </p>
-              <ul class="bullets">
-                <li> Bank/Behörde kontaktieren </li>
-                <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
-                <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
 
-        <!-- Betroffene -->
-        <div id="panel-betroffene" role="tabpanel" aria-labelledby="tab-betroffene" hidden>
-          <div class="grid">
-            <div class="card">
-              <h2> Wen betrifft Cybersecurity? </h2>
-              <p>
+            <div class="page-panel" id="panel-betroffene"
+                 role="tabpanel" aria-labelledby="tab-betroffene" hidden>
+<section class="content-section"><h2> Wen betrifft Cybersecurity? </h2><p>
                 Cybersecurity betrifft nicht nur „die mit viel Technik“, sondern grundsätzlich jeden, der digitale Dienste nutzt – also Kommunikation, Konten, Geräte oder Online-Zugänge.
                 Der entscheidende Punkt ist nicht, wie „wichtig“ jemand ist, sondern wie viele digitale Schnittstellen im Alltag vorhanden sind: Je mehr Konten, Apps und Verbindungen, desto mehr Möglichkeiten gibt es für Missbrauch, Fehler oder ungewollte Zugriffe.
-              </p>
-              <br>
-              
-              <h2> Typische Betroffene sind zum Beispiel: </h2>
-              <ul class="bullets">
-                <li>
-                  <strong> Privatpersonen </strong>
+              </p></section><section class="content-section"><h2> Typische Betroffene sind zum Beispiel: </h2><ul class="page-list">
+<li>
+<strong> Privatpersonen </strong>
                   , weil E-Mail, Messenger und Online-Konten oft der Schlüssel zu vielen weiteren Diensten sind
                 </li>
-                <li>
-                  <strong> Familien </strong>
+<li>
+<strong> Familien </strong>
                   , weil mehrere Geräte, Accounts und Einstellungen zusammenkommen – und weil Kinder/Jugendliche andere Risiken und Kommunikationsräume haben
                 </li>
-                <li>
-                  <strong> Ältere Menschen </strong>
+<li>
+<strong> Ältere Menschen </strong>
                   , weil Betrugsmaschen häufig auf Vertrauen, Zeitdruck oder Verunsicherung setzen – nicht auf technisches Können
                 </li>
-                <li>
-                  <strong> Schüler </strong>
+<li>
+<strong> Schüler </strong>
                   , Studierende und Berufstätige, weil Login-Daten, Cloud-Speicher, Lernplattformen und Arbeitszugänge eine große Rolle spielen
                 </li>
-                <li>
-                  <strong> Selbstständige und kleine Unternehmen </strong>
+<li>
+<strong> Selbstständige und kleine Unternehmen </strong>
                   , weil dort oft wenig Zeit für Struktur ist, aber trotzdem Daten, Kundenthemen und Zahlungswege dranhängen
                 </li>
-                <li>
-                  <strong> Vereine, Schulen und Organisationen </strong>
+<li>
+<strong> Vereine, Schulen und Organisationen </strong>
                   , weil viele Personen Zugriff benötigen und dadurch Verantwortung und Übersicht schnell komplizierter werden
                 </li>
-              </ul>
-              <br>
-
-              <h2> Warum trifft es so viele? </h2>
-              <p>
+</ul></section><section class="content-section"><h2> Warum trifft es so viele? </h2><p>
                 Weil digitale Systeme heute stark vernetzt sind: Ein einzelner Zugang kann mehrere Konten oder Geräte nach sich ziehen, und kleine Nachlässigkeiten werden im Alltag schnell „normal“.
                 Außerdem zielen viele Vorfälle nicht auf eine bestimmte Person, sondern laufen massenhaft – automatisiert und nach einfachen Mustern: erreichbare Konten, wiederverwendete Passwörter, unklare Identitäten, fehlende Übersicht.
-              </p>
-              <br>
-
-              <p>
+              </p><p>
                 Das Ziel ist deshalb nicht, alles perfekt zu machen – sondern Risiken realistisch einzuordnen und die eigene digitale Umgebung so zu gestalten, dass typische Probleme deutlich seltener und weniger schlimm werden.
-              </p>
-              
+              </p></section>
             </div>
 
-            <div class="card">
+          </div>
+
+          <aside class="page-aside">
+
+            <section class="page-aside-section">
               <div class="kicker"><span class="bar"></span><span> Links </span></div>
               <h2> Verzeichnis/Navigation </h2>
-              <p>
-                <a href="/">                                  <span class="orange" aria-hidden="true"> → </span> Startseite                   </a><br>
-                <a href="/pages/was_ist_serveload.html">            <span class="orange" aria-hidden="true"> → </span> Was ist ServeLoad?           </a><br>
-                <a href="/pages/was_bedeutet_cybersecurity.html">   <span class="orange" aria-hidden="true"> → </span> Was bedeutet Cyber_Security? </a><br>
-                <a href="/pages/gibt_es_schutz.html">               <span class="orange" aria-hidden="true"> → </span> Gibt es Schutz?              </a><br>
-              </p>
 
-              <!-- Abstandshalter -->
-              <br>
-              <br>
-              <br>
-              
+              <nav class="page-links" aria-label="Seitennavigation">
+                <a href="/">Startseite</a>
+                <a href="/pages/was_ist_serveload.html">Was ist ServeLoad?</a>
+                <a href="/pages/was_bedeutet_cybersecurity.html">Was bedeutet Cyber_Security?</a>
+                <a href="/pages/gibt_es_schutz.html">Gibt es Schutz?</a>
+              </nav>
+            </section>
+
+            <section class="page-aside-section">
               <div class="kicker"><span class="bar"></span><span> Hinweise </span></div>
-              <h2> Wichtig! </h2>
-              <p> Bei akuter Gefahr direkt handeln: </p>
-              <ul class="bullets">
-                <li> Bank/Behörde kontaktieren </li>
-                <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
-                <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </section>
+              <div class="page-note">
+                <h2> Wichtig! </h2>
+                <p> Bei akuter Gefahr direkt handeln: </p>
+                <ul class="page-list">
+                  <li> Bank/Behörde kontaktieren </li>
+                  <li> Passwörter ändern und falls möglich 2FA aktivieren </li>
+                  <li> Falls nötig vertrauenswürdige Experten hinzuziehen </li>
+                </ul>
+              </div>
+            </section>
+
+          </aside>
+
+        </div>
+      </section>
+
+    </main>
 
     <footer>
       <a class="back" href="/" aria-label="Zur Startseite"> ← Zur Startseite </a>
@@ -348,27 +231,30 @@
         <a href="/pages/-datenschutz.html"> Datenschutz </a>
       </div>
     </footer>
+
   </div>
 
+  <script src="/script/background.js"></script>
+
   <script>
-    // Accessible tabs + deep-linking via URL hash (e.g. ...html#tab-ziele)
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
-    const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
+    const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
 
     function activateTab(tab, { setHash = true, focus = true } = {}) {
-      tabs.forEach(t => {
-        const selected = (t === tab);
-        t.setAttribute('aria-selected', selected ? 'true' : 'false');
-        t.tabIndex = selected ? 0 : -1;
+      tabs.forEach(currentTab => {
+        const selected = currentTab === tab;
+        currentTab.setAttribute('aria-selected', selected ? 'true' : 'false');
+        currentTab.tabIndex = selected ? 0 : -1;
       });
 
-      panels.forEach(p => { if (p) p.hidden = true; });
+      panels.forEach(panel => {
+        if (panel) panel.hidden = true;
+      });
 
       const panel = document.getElementById(tab.getAttribute('aria-controls'));
       if (panel) panel.hidden = false;
 
       if (setHash && tab.id) {
-        // Replace hash without jumping/scrolling
         history.replaceState(null, '', '#' + encodeURIComponent(tab.id));
       }
 
@@ -378,28 +264,33 @@
     function tabFromHash() {
       const id = decodeURIComponent((location.hash || '').replace(/^#/, ''));
       if (!id) return null;
-      return tabs.find(t => t.id === id) || null;
+      return tabs.find(tab => tab.id === id) || null;
     }
 
-    // Click + keyboard
     tabs.forEach(tab => {
       tab.addEventListener('click', () => activateTab(tab));
-      tab.addEventListener('keydown', (e) => {
-        const i = tabs.indexOf(tab);
-        if (e.key === 'ArrowRight') activateTab(tabs[(i + 1) % tabs.length]);
-        if (e.key === 'ArrowLeft') activateTab(tabs[(i - 1 + tabs.length) % tabs.length]);
+
+      tab.addEventListener('keydown', event => {
+        const index = tabs.indexOf(tab);
+
+        if (event.key === 'ArrowRight') {
+          activateTab(tabs[(index + 1) % tabs.length]);
+        }
+
+        if (event.key === 'ArrowLeft') {
+          activateTab(tabs[(index - 1 + tabs.length) % tabs.length]);
+        }
       });
     });
 
-    // On load: open tab from hash (if present)
     const initial = tabFromHash();
     if (initial) activateTab(initial, { setHash: false, focus: false });
 
-    // If hash changes while the page is open, switch tabs accordingly
     window.addEventListener('hashchange', () => {
-      const t = tabFromHash();
-      if (t) activateTab(t, { setHash: false, focus: false });
+      const tab = tabFromHash();
+      if (tab) activateTab(tab, { setHash: false, focus: false });
     });
   </script>
+
 </body>
 </html>

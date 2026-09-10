@@ -1,0 +1,488 @@
+/* =========================================================
+   SERVELOAD - INHALTSSEITEN
+   Nur seitenbezogene Styles.
+   Globale Basis: base.css
+   Gemeinsame Bauteile: components.css
+   Hintergrund: background.css
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.page-hero{
+  padding:
+    72px
+    0
+    54px;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.page-hero .kicker{
+  margin-bottom:18px;
+}
+
+.page-hero h1{
+  max-width:780px;
+
+  margin:
+    0
+    0
+    18px;
+
+  font-size:
+    clamp(36px, 6vw, 64px);
+
+  line-height:1.02;
+  letter-spacing:-2px;
+}
+
+.page-intro{
+  max-width:720px;
+
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:
+    clamp(16px, 2vw, 19px);
+
+  line-height:1.7;
+}
+
+
+/* =========================================================
+   TABS
+   ========================================================= */
+
+.page-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:
+    8px
+    22px;
+
+  padding:
+    22px
+    0;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.page-tab{
+  position:relative;
+
+  padding:
+    8px
+    0;
+
+  border:0;
+
+  background:none;
+
+  color:var(--muted);
+
+  font:inherit;
+  font-size:14px;
+  font-weight:650;
+
+  cursor:pointer;
+
+  transition:
+    color 0.2s ease;
+}
+
+.page-tab::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:2px;
+
+  width:0;
+  height:2px;
+
+  background:var(--accent);
+
+  transition:
+    width 0.2s ease;
+}
+
+.page-tab:hover{
+  color:var(--text);
+}
+
+.page-tab:hover::after,
+.page-tab[aria-selected="true"]::after{
+  width:100%;
+}
+
+.page-tab[aria-selected="true"]{
+  color:var(--text);
+}
+
+.page-tab:focus-visible{
+  outline:
+    2px solid rgba(213,139,60,0.65);
+
+  outline-offset:5px;
+  border-radius:2px;
+}
+
+
+/* =========================================================
+   INHALT
+   ========================================================= */
+
+.page-content{
+  padding:
+    46px
+    0
+    64px;
+}
+
+.page-grid{
+  display:grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(240px, 0.38fr);
+
+  gap:
+    56px
+    64px;
+
+  align-items:start;
+}
+
+.content-flow{
+  min-width:0;
+}
+
+.page-panel[hidden]{
+  display:none;
+}
+
+.content-section{
+  padding:
+    0
+    0
+    34px;
+
+  margin-bottom:34px;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.content-section:last-child{
+  margin-bottom:0;
+  padding-bottom:0;
+  border-bottom:0;
+}
+
+.content-section h2{
+  margin:
+    0
+    0
+    12px;
+
+  font-size:
+    clamp(20px, 2.5vw, 26px);
+
+  line-height:1.2;
+  letter-spacing:-0.4px;
+}
+
+.content-section p{
+  max-width:760px;
+
+  margin:0;
+
+  color:var(--muted);
+
+  line-height:1.7;
+}
+
+.content-section p + p{
+  margin-top:14px;
+}
+
+
+/* =========================================================
+   LISTEN
+   ========================================================= */
+
+.page-list{
+  margin:
+    16px
+    0
+    0;
+
+  padding-left:20px;
+
+  color:var(--muted);
+
+  line-height:1.65;
+}
+
+.page-list li{
+  padding-left:4px;
+}
+
+.page-list li + li{
+  margin-top:8px;
+}
+
+.page-list li::marker{
+  color:var(--accent);
+}
+
+
+/* =========================================================
+   SEITENLEISTE
+   ========================================================= */
+
+.page-aside{
+  position:sticky;
+  top:24px;
+
+  padding-left:24px;
+
+  border-left:
+    1px solid var(--border);
+}
+
+.page-aside-section{
+  padding:
+    0
+    0
+    26px;
+
+  margin-bottom:26px;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+.page-aside-section:last-child{
+  margin-bottom:0;
+  padding-bottom:0;
+  border-bottom:0;
+}
+
+.page-aside-section .kicker{
+  margin-bottom:12px;
+}
+
+.page-aside-section h2{
+  margin:
+    0
+    0
+    12px;
+
+  font-size:16px;
+  line-height:1.25;
+}
+
+.page-aside-section p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:14px;
+  line-height:1.6;
+}
+
+.page-links{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:9px;
+}
+
+.page-links a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  color:var(--muted);
+
+  font-size:14px;
+  line-height:1.4;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.page-links a::before{
+  content:"→";
+
+  color:var(--accent);
+}
+
+.page-links a:hover{
+  color:var(--text);
+
+  transform:
+    translateX(3px);
+}
+
+
+/* =========================================================
+   META
+   ========================================================= */
+
+.page-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:
+    8px
+    18px;
+
+  margin-top:24px;
+}
+
+.page-meta-item{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  color:var(--muted2);
+
+  font-size:12px;
+}
+
+.page-meta-dot{
+  width:7px;
+  height:7px;
+
+  flex:0 0 auto;
+
+  border-radius:50%;
+
+  background:var(--accent);
+}
+
+
+/* =========================================================
+   HINWEIS
+   ========================================================= */
+
+.page-note{
+  padding:
+    18px
+    0
+    18px
+    18px;
+
+  border-left:
+    2px solid var(--accent);
+}
+
+.page-note h2{
+  margin:
+    0
+    0
+    8px;
+
+  font-size:16px;
+}
+
+.page-note p{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:14px;
+  line-height:1.6;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width:760px){
+
+  .page-hero{
+    padding:
+      54px
+      0
+      42px;
+  }
+
+  .page-hero h1{
+    letter-spacing:-1.3px;
+  }
+
+  .page-tabs{
+    gap:
+      6px
+      18px;
+
+    overflow-x:auto;
+    flex-wrap:nowrap;
+
+    scrollbar-width:thin;
+  }
+
+  .page-tab{
+    flex:0 0 auto;
+
+    white-space:nowrap;
+  }
+
+  .page-content{
+    padding:
+      38px
+      0
+      50px;
+  }
+
+  .page-grid{
+    grid-template-columns:1fr;
+
+    gap:44px;
+  }
+
+  .page-aside{
+    position:static;
+
+    padding:
+      28px
+      0
+      0;
+
+    border-left:0;
+
+    border-top:
+      1px solid var(--border);
+  }
+}
+
+@media (max-width:480px){
+
+  .page-hero{
+    padding:
+      44px
+      0
+      36px;
+  }
+
+  .page-content{
+    padding-top:32px;
+  }
+
+  .content-section{
+    padding-bottom:28px;
+
+    margin-bottom:28px;
+  }
+}
