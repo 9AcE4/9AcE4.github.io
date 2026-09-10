@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Für Eltern – ServeLoad</title>
   <meta name="description" content="Elternbereich von ServeLoad: Überblick, Altersstufen, Risiken, Alltag & Kommunikation, Geräte & Einstellungen und ein Notfallplan." />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/style/legacy.css" />
 </head>
 
 <body>
@@ -267,15 +267,15 @@
     <footer>
       <a class="back" href="/" aria-label="Zur Startseite">← Zur Startseite</a>
       <div class="footlinks">
-        <a href="/impressum.html">Impressum</a>
-        <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/pages/-impressum.html">Impressum</a>
+        <a href="/pages/-datenschutz.html">Datenschutz</a>
       </div>
     </footer>
 
   </div>
 
   <script>
-    // Accessible tabs + deep-linking via URL hash (e.g. .../fuer_eltern.html#tab-notfallplan)
+    // Accessible tabs + deep-linking via URL hash (e.g. .../pages/fuer_eltern.html#tab-notfallplan)
     const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
     const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
 
